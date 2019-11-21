@@ -5,11 +5,14 @@ using UnityEngine;
 public class DetectCollisions : MonoBehaviour
 {
     public GameObject person;
+    private PlayerController playerControllerScript;
+    private GameOver gameOverScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
     }
 
     // Update is called once per frame
@@ -20,12 +23,20 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Food")
+        if (!gameOverScript.gameOver)
         {
-            Destroy(gameObject);
-            if (person.tag == other.tag)
+            if (other.tag != "Food")
             {
-                Destroy(other.gameObject);
+                Destroy(gameObject);
+                if (person.tag != other.tag)
+                {
+                    playerControllerScript.points -= 5;
+                }
+                if (person.tag == other.tag)
+                {
+                    Destroy(other.gameObject);
+                    playerControllerScript.points += 25;
+                }
             }
         }
     }
