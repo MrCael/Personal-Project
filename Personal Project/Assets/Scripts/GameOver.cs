@@ -18,6 +18,7 @@ public class GameOver : MonoBehaviour
     {
         if (playerControllerScript.points < 1)
         {
+            playerControllerScript.points = 0;
             gameOver = true;
         }
     }

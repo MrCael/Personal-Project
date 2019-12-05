@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{177895CB-4F47-3755-436B-A776DA2B4B54}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameOver.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ParticleManager.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="11" Column="33" />
-      <File FileName="Assets/Scripts/MoveForward.cs" Line="14" Column="96" />
-      <File FileName="Assets/Scripts/DestroyOutOfBounds.cs" Line="9" Column="5" />
-      <File FileName="Assets/Scripts/SpawnManager.cs" Line="27" Column="38" />
-      <File FileName="Assets/Scripts/DetectCollisions.cs" Line="26" Column="38" />
+      <File FileName="Assets/Scripts/MoveForward.cs" />
+      <File FileName="Assets/Scripts/DestroyOutOfBounds.cs" Line="30" Column="18" />
+      <File FileName="Assets/Scripts/SpawnManager.cs" Line="7" Column="39" />
+      <File FileName="Assets/Scripts/DetectCollisions.cs" />
       <File FileName="Assets/Scripts/GameOver.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/ParticleManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +15,7 @@
           <Node name="Personal Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameOver.cs" selected="True" />
+                <Node name="ParticleManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -24,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ff9688e1-293c-4bf7-9250-25515157566c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="96c65f24-d9b1-444f-9c3a-0c57ba0fa83d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

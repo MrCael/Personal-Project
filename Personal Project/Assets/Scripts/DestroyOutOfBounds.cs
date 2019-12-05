@@ -24,7 +24,10 @@ public class DestroyOutOfBounds : MonoBehaviour
             if (transform.position.z < backBound)
             {
                 Destroy(gameObject);
-                playerControllerScript.points -= 100;
+                if (!gameObject.CompareTag("Dust"))
+                {
+                    playerControllerScript.points -= 100;
+                }
 
                 if (playerControllerScript.points < 1)
                 {

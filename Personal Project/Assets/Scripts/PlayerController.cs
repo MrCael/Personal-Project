@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public GameObject[] foodPrefabs;
+    private AudioSource playerAudio;
+    public AudioClip shootFood;
+    private GameOver gameOverScript;
     public float speed = 20;
     public float horizontalInput;
     public float sideBound = 17;
@@ -16,12 +19,13 @@ public class PlayerController : MonoBehaviour
     public float nextFoodFive;
     public float foodCooldown = 1;
     public float points = 100;
-    private GameOver gameOverScript;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +50,7 @@ public class PlayerController : MonoBehaviour
             {
                 int foodIndex = 0;
                 Instantiate(foodPrefabs[foodIndex], transform.position, transform.rotation);
+                playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodOne = Time.time + foodCooldown;
 
             }
@@ -54,6 +59,7 @@ public class PlayerController : MonoBehaviour
             {
                 int foodIndex = 1;
                 Instantiate(foodPrefabs[foodIndex], transform.position, transform.rotation);
+                playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodTwo = Time.time + foodCooldown;
             }
 
@@ -61,6 +67,7 @@ public class PlayerController : MonoBehaviour
             {
                 int foodIndex = 2;
                 Instantiate(foodPrefabs[foodIndex], transform.position, transform.rotation);
+                playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodThree = Time.time + foodCooldown;
             }
 
@@ -68,6 +75,7 @@ public class PlayerController : MonoBehaviour
             {
                 int foodIndex = 3;
                 Instantiate(foodPrefabs[foodIndex], transform.position, transform.rotation);
+                playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodFour = Time.time + foodCooldown;
             }
 
@@ -75,6 +83,7 @@ public class PlayerController : MonoBehaviour
             {
                 int foodIndex = 4;
                 Instantiate(foodPrefabs[foodIndex], transform.position, transform.rotation);
+                playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodFive = Time.time + foodCooldown;
             }
         }
