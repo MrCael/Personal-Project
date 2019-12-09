@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
         playerAudio = GetComponent<AudioSource>();
     }
 

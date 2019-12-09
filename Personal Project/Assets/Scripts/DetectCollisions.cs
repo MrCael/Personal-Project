@@ -7,18 +7,22 @@ public class DetectCollisions : MonoBehaviour
     public GameObject person;
     private PlayerController playerControllerScript;
     private GameOver gameOverScript;
+    private AudioSource foodAudio;
+    public AudioClip wrongFood;
+    public AudioClip rightFood;
 
     // Start is called before the first frame update
     void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
+        foodAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,16 +31,18 @@ public class DetectCollisions : MonoBehaviour
         {
             if (other.tag != "Food")
             {
-                Destroy(gameObject);
                 if (person.tag != other.tag)
                 {
+                    foodAudio.PlayOneShot(wrongFood, 1.0f);
                     playerControllerScript.points -= 5;
                 }
-                if (person.tag == other.tag)
+                else if (person.tag == other.tag)
                 {
+                    foodAudio.PlayOneShot(rightFood, 1.0f);
                     Destroy(other.gameObject);
                     playerControllerScript.points += 25;
                 }
+                Destroy(gameObject);
             }
         }
     }

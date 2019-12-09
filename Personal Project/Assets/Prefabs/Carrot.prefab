@@ -70,6 +70,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  speedUp: 10
 --- !u!114 &2424941653674154069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,4 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a80bf8c75c44c8d9d8af68a41cdffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  person: {fileID: 8325946743376108932, guid: abb9927dcff3d41b2bcd0edad266ce3f, type: 3}
+  person: {fileID: 9220282855850249448, guid: 6fc992225b10d451380235bf36f8dba7, type: 3}
+  wrongFood: {fileID: 8300000, guid: 93512e7c9528d452e8b6f1ae317bc012, type: 3}
+  rightFood: {fileID: 8300000, guid: b3696703208ab4c5b821dd4c2a587bbd, type: 3}

@@ -11,7 +11,7 @@ public class MoveForward : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
     }
 
     // Update is called once per frame

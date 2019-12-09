@@ -13,7 +13,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
     }
 
     // Update is called once per frame

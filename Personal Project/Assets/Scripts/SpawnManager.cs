@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandomPerson", startDelay, spawnInterval);
-        gameOverScript = GameObject.Find("GameOverManager").GetComponent<GameOver>();
+        gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
     }
 
     // Update is called once per frame

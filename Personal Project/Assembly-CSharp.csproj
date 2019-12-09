@@ -67,9 +67,9 @@
     <Compile Include="Assets\Scripts\DetectCollisions.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\MoveForward.cs" />
-    <Compile Include="Assets\Scripts\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\StopMusic.cs" />
     <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Home/Documents/Personal-Project/Personal-Project/Personal Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

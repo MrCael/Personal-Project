@@ -5,12 +5,14 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     private PlayerController playerControllerScript;
+    public AudioSource gameAudio;
     public bool gameOver;
 
     // Start is called before the first frame update
     void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class GameOver : MonoBehaviour
         {
             playerControllerScript.points = 0;
             gameOver = true;
+            gameAudio.Stop();
         }
     }
 }

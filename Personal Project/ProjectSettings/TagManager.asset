@@ -10,6 +10,7 @@ TagManager:
   - Pizza
   - Sandwhich
   - Meat
+  - Dust
   layers:
   - Default
   - TransparentFX
