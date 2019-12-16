@@ -33,8 +33,8 @@ public class DetectCollisions : MonoBehaviour
             {
                 if (person.tag != other.tag)
                 {
-                    foodAudio.PlayOneShot(wrongFood, 1.0f);
                     playerControllerScript.points -= 5;
+                    foodAudio.PlayOneShot(wrongFood, 1.0f);
                 }
                 else if (person.tag == other.tag)
                 {

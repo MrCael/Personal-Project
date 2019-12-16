@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{177895CB-4F47-3755-436B-A776DA2B4B54}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenuFunctionality.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DestroyOutOfBounds.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="39" Column="1" />
-      <File FileName="Assets/Scripts/MoveForward.cs" Line="14" Column="54" />
+      <File FileName="Assets/Scripts/MoveForward.cs" />
       <File FileName="Assets/Scripts/DestroyOutOfBounds.cs" Line="16" Column="54" />
-      <File FileName="Assets/Scripts/SpawnManager.cs" Line="18" Column="54" />
-      <File FileName="Assets/Scripts/DetectCollisions.cs" Line="37" Column="56" />
-      <File FileName="Assets/Scripts/GameOver.cs" Line="9" Column="32" />
+      <File FileName="Assets/Scripts/SpawnManager.cs" />
+      <File FileName="Assets/Scripts/DetectCollisions.cs" />
+      <File FileName="Assets/Scripts/GameOver.cs" />
       <File FileName="Assets/Scripts/MainMenuFunctionality.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -15,7 +15,7 @@
           <Node name="Personal Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MainMenuFunctionality.cs" selected="True" />
+                <Node name="DestroyOutOfBounds.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="96c65f24-d9b1-444f-9c3a-0c57ba0fa83d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fb52af51-442a-4d49-83b2-fd4aadd3b10d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
