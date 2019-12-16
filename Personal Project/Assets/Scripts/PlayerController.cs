@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip shootFood;
     private GameOver gameOverScript;
+    public Text pointsText;
     public float speed = 20;
     public float horizontalInput;
     public float sideBound = 17;
@@ -18,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float nextFoodFour;
     public float nextFoodFive;
     public float foodCooldown = 1;
-    public float points = 100;
+    public float points;
    
 
     // Start is called before the first frame update
@@ -26,11 +28,15 @@ public class PlayerController : MonoBehaviour
     {
         gameOverScript = GameObject.Find("Main Camera").GetComponent<GameOver>();
         playerAudio = GetComponent<AudioSource>();
+        points = 100;
+        pointsText.text = "Points: " + points.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
+        pointsText.text = "Points: " + points.ToString();
+
         if (!gameOverScript.gameOver)
         {
             horizontalInput = Input.GetAxis("Horizontal");
