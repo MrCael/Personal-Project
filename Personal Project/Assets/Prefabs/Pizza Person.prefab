@@ -5710,7 +5710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backBound: -26
-  frontBound: 18
+  frontBound: 30
 --- !u!1 &2365821067214684908
 GameObject:
   m_ObjectHideFlags: 0

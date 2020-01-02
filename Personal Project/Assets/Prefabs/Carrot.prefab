@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backBound: -26
-  frontBound: 16
+  frontBound: 30
 --- !u!114 &5173521485327982914
 MonoBehaviour:
   m_ObjectHideFlags: 0

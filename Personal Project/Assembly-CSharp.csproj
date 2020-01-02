@@ -304,9 +304,6 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>/Users/cael.e988/Documents/Personal-Project/Personal Project/Personal-Project/Personal Project/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>/Users/cael.e988/Documents/Personal-Project/Personal Project/Personal-Project/Personal Project/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>

@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backBound: -26
-  frontBound: 16
+  frontBound: 30
 --- !u!114 &3074407438907248859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +156,6 @@ MonoBehaviour:
   person: {fileID: 2365821067214684902, guid: a8dd0e4e18a684a8a97a3e28085f8f11, type: 3}
   wrongFood: {fileID: 8300000, guid: 93512e7c9528d452e8b6f1ae317bc012, type: 3}
   rightFood: {fileID: 8300000, guid: b3696703208ab4c5b821dd4c2a587bbd, type: 3}
-  checkFood: 0
 --- !u!82 &2064728003073195128
 AudioSource:
   m_ObjectHideFlags: 0

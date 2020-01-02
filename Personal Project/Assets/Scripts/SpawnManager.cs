@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (!gameOverScript.gameOver)
         {
-            startPos = new Vector3(Random.Range(-17, 17), 0, 17);
+            startPos = new Vector3(Random.Range(-16, 16), 0, 20);
             int peopleIndex = Random.Range(0, personPrefabs.Length);
             Instantiate(personPrefabs[peopleIndex], startPos, personPrefabs[peopleIndex].transform.rotation);
         }

@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Text pointsText;
     public float speed = 20;
     public float horizontalInput;
-    public float sideBound = 17;
+    public float sideBound = 23;
     public float nextFoodOne;
     public float nextFoodTwo;
     public float nextFoodThree;
@@ -92,6 +92,11 @@ public class PlayerController : MonoBehaviour
                 playerAudio.PlayOneShot(shootFood, 3.0f);
                 nextFoodFive = Time.time + foodCooldown;
             }
+        }
+
+        if (gameOverScript.gameOver)
+        {
+            pointsText.gameObject.SetActive(false);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     public float backBound = -27;
-    public float frontBound = 18;
+    public float frontBound = 30;
     private PlayerController playerControllerScript;
     private GameOver gameOverScript;
 
